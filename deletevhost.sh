@@ -1,4 +1,8 @@
 #!/bin/bash
+if [ `whoami` != root ]; then
+    echo Please run this script as root or using sudo
+    exit
+fi
 
 echo "Enter a domain (e.g. dev.example.com):";
 read domain;
