@@ -7,7 +7,7 @@ fi
 echo "Enter a domain (e.g. dev.example.com):";
 read domain;
 echo ""
-echo "Enter file location (e.g. dnx/myproject):"
+echo "Enter file location (e.g. mydir/myproject):"
 read folder;
 echo ""
 
