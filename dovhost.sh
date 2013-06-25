@@ -8,7 +8,7 @@ fi
 
 ### Check if we have a valid command
 if [ ! "$1" ]; then
-    echo "dovhost.sh [add|delete|list]"
+    echo "dovhost.sh [add|delete|enable|list]"
     exit
 fi
 
