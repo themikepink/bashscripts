@@ -22,7 +22,7 @@ if [[ "$1" = "list" ]]; then
         do
             echo ${i%%.$SUFFIX} |sed 's#^.*/##'
         done
-    exit
+        exit
     fi
     ### List available hosts
     if [[ "$2" = "available" ]]; then
@@ -32,7 +32,7 @@ if [[ "$1" = "list" ]]; then
         do
             echo ${i%%.$SUFFIX} |sed 's#^.*/##'
         done
-    exit
+        exit
     fi
     ### No list type selected
     echo "dovhost.sh list [enabled|available]"
