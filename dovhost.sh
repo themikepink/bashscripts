@@ -108,6 +108,15 @@ if [ "$1" = "enable" ]; then
         ### Create symbolic link in enabled directory
         ln -s /etc/apache2/sites-available/${domain}.vhost.conf /etc/apache2/sites-enabled/${domain}.vhost.conf
         echo "Site enabled"
+
+        ### Check to see if this domain exists in the host file - if not add it
+        if ! grep "${domain}" /etc/apache2/httpd.conf >> /dev/null; then
+            echo "127.0.0.1 ${domain}" >> /etc/hosts
+            echo "Host file updated"
+        else
+            echo "Already in hosts"
+        fi
+
         echo "Would you like me to restart the server? (y/n)"
         read q
         if [[ "${q}" == "yes" ]] || [[ "${q}" == "y" ]]; then
