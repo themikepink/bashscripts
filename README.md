@@ -31,4 +31,4 @@ Re-enables a virtual host that hasn't been permenantly deleted
 
 ###### List all available virtual hosts
 
-`sudo dovhost.sh delete available`
+`sudo dovhost.sh list available`
