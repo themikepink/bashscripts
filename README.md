@@ -33,7 +33,7 @@ Re-enables a virtual host that hasn't been permenantly deleted
 
 `sudo dovhost.sh list available`
 
-##### Adding to your zsh / bash #####
+##### Adding to your zsh / bash
 
 Add the following to your .zshrc file
 
