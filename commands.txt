@@ -1,0 +1,11 @@
+Tar zip Folder
+tar -cvzf filename.tgz directory
+
+Unzip
+tar xzf filename.tgz
+
+Copy file from local to server:
+rsync -a -r -z -v --progress --partial -e ssh filename.tgz sandbox1@sandbox1.dnxdemo.com:/var/www/html/sandbox1.dnxdemo.com/adk1996/filename.tgz
+
+Remove folder
+rm -rf foldername

@@ -32,3 +32,10 @@ Re-enables a virtual host that hasn't been permenantly deleted
 ###### List all available virtual hosts
 
 `sudo dovhost.sh list available`
+
+##### Adding to your zsh / bash #####
+
+Add the following to your .zshrc file
+
+`export PATH=$PATH:~/scripts`
+`alias dovhost="sudo dovhost.sh"`
